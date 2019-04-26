@@ -1,0 +1,68 @@
+.competition-body {
+    background-color: #fff;
+    margin: 24px 0;
+    border-radius: 8px;
+    border: solid 1px #CDCFDA;
+    display: flex;
+    flex-direction: row;
+
+    @media screen and (max-width: $mobile-width) {
+        flex-direction: column;
+    }
+
+    &-navigation {
+        width: 20%;
+        min-width: 250px;
+        padding-top: 24px;
+        display: flex;
+        flex-direction: column;
+        border-right: solid 1px rgba(7, 17, 69, 0.1);
+        
+        @media screen and (max-width: $mobile-width) {
+            width: 100%;
+            border-right: none;
+            border-bottom: solid 1px rgba(7, 17, 69, 0.1);
+        }
+    }
+
+    &-navigation-item {
+        font-weight: 500;
+        padding-left: 32px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+            background-color: #E8F1FB;
+        }
+
+        &.active {
+            background-color: #E8F1FB;
+            border-right: 4px solid #306DE5;
+        }
+    }
+
+    &-content {
+        margin: 40px 40px 56px 39px;
+        width: 80%;
+        box-sizing: border-box;
+        overflow: auto;
+
+        h1 {
+            font-size: 20px;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        p {
+            line-height: 28px;
+        }
+    }
+
+    a {
+        color: #000;
+        text-decoration: none;
+    }
+}

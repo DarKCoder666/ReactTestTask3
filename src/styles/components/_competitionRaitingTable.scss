@@ -1,0 +1,53 @@
+.competition-raiting-table {
+    overflow-x: auto;
+    width: 100%;
+
+    table {
+        width: 100%;
+        margin-top: 40px;
+        border-collapse: collapse;
+    }
+
+    td, th {
+        border-bottom: solid 1px rgba(7, 17, 69, 0.1);
+        padding: 15px;
+        box-sizing: border-box;
+        text-align-last: left;
+    
+        span {
+            display: flex;
+            align-items: center;
+        }
+    }
+    
+    tr:last-child td {
+        border-bottom: none;
+    }
+
+    img {
+        width: 22px;
+        margin-right: 5px;
+    }
+
+    span[place=p1],
+    span[place=p2],
+    span[place=p3] {
+        color: white;
+        border-radius: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 24px;
+        height: 24px;
+    }
+
+    span[place=p1] {
+        background-color: rgb(252, 202, 83);
+    }
+    span[place=p2] {
+        background-color: rgb(196, 196, 196);
+    }
+    span[place=p3] {
+        background-color: rgb(222, 131, 92);
+    }
+}

@@ -1,0 +1,76 @@
+.competition-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    border: solid 1px #CDCFDA;
+    border-top: 4px solid rgb(48, 109, 229);
+    margin: 20px 0;
+    
+    &-title {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        margin: 0 0 16px 0;
+    }
+    
+    &-body {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        line-height: 24px;
+        font-size: 16px;
+        padding: 28px 24px;
+
+        @media screen and (max-width: $mobile-width) {
+            flex-direction: column;
+        }
+    }
+
+    &-image {
+        margin-left: 20px;
+        max-width: 22%;
+
+        img {
+            width: 100%;
+        }
+
+        @media screen and (max-width: $mobile-width) {
+            width: 80%;
+            max-width: 300px;
+            margin-top: 24px;
+            margin-left: 0;
+        }
+    }
+
+    &-footer {
+        display: flex;
+        background-color: #FAFAFF;
+        padding-left: 24px;
+        height: 65px;
+        border-top: solid 1px rgba(7, 17, 69, 0.1);
+    }
+
+    &-date {
+        display: flex;
+        align-items: center;
+        margin-right: 24px;
+        img {
+            width: 16px;
+            margin-right: 8px;
+        }
+    }
+
+    &-fund {
+        display: flex;
+        align-items: center;
+        margin-right: 24px;
+        img {
+            width: 24px;
+            margin-right: 8px;
+        }
+    }
+
+    a {
+        color: #000;
+        text-decoration: none;
+    }
+}
